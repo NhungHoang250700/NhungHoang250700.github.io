@@ -9,45 +9,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <title>Hoàng Thị Hồng Nhung</title>
     <style>
         .fakeing {
             height: 200px;
             background: #aaa;
         }
+        a:hover{
+           background-color:dodgerblue;
+        }
+        #head {
+            background-image: url('/Baitap1/anh1.jpg');
+            animation-name: example;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example {
+            0%   {background-image: url('/Baitap1/anh1.jpg');}
+            25%  {background-image: url('/Baitap1/anh2.jpg');}
+            50%  {background-image: url('/Baitap1/anh3.jpg');}
+            100% {background-image: url('/Baitap1/anh4.jpg');}
+        }    
     </style>
 </head>
 <body>
-    <div class="jumbotron text-center" style="margin-bottom: 0;background-color:peru;">
-        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hoàng Thị Hồng Nhung</h1>
-        <p style="color: white;">Phát triển ứng dụng Web</p>
+    <div class="jumbotron text-center" style="margin-bottom: 0;border-radius:0%;" id="head">
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:peru; font-weight: bold;">Hoàng Thị Hồng Nhung</h1>
+        <p style="color:black; border-style:solid ; margin-left: 40%; margin-right: 40%;font-weight: bold">Phát triển ứng dụng Web</p>
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <i class="fa fa-home " style="font-size:x-large; color:royalblue;" aria-hidden="true"></i>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a class="fa fa-home " style="font-size:x-large; color:white; text-decoration: none;" aria-hidden="true"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="Bài tập 1/Luyentap1.html" style="color: royalblue; margin-left: 10px;">Exercise 1</a>
+                    <a class="nav-link" href="Baitap1/Luyentap1.html" style="color: white; margin-left: 10px;" target="_bank">EXERCISE 1</a>
                 </li>
-                <button type="button" class="btn" data-toggle="dropdown" style="color: royalblue; ">Exercise 2</button>
-                <div class="dropdown-menu" style="margin-left: 120px;">
-                    <a class="dropdown-item" href="Bài tập 1/jsexample.html/1.html">1</a>
-                    <a class="dropdown-item" href="Bài tập 1/jsexample.html/2.html">2</a>
-                    <a class="dropdown-item" href="Bài tập 1/jsexample.html/cal.html">3</a>
-
-                </div>
-                
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: royalblue;">Exercise 3</a>
+                    <a type="button" class="btn" data-toggle="dropdown" style="color: white; ">EXERCISE 2</a>
+                    <div class="dropdown-menu" style="margin-left: 120px;">
+                        <a class="dropdown-item" href="Baitap1/jsexample.html/1.html" target="_bank">1</a>
+                        <a class="dropdown-item" href="Baitap1/jsexample.html/2.html" target="_bank">2</a>
+                        <a class="dropdown-item" href="Baitap1/jsexample.html/cal.html" target="_bank">3</a>
+    
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a type="button" class="btn" data-toggle="dropdown" style="color: white; ">EXERCISE 3</a>
+                    <div class="dropdown-menu" style="margin-left: 250px;">
+                        <a class="dropdown-item" href="Baitap1/jsexample.html/jquery1.html" target="_bank">1</a>
+                        <a class="dropdown-item" href="Baitap1/jsexample.html/jquery2.html" target="_bank">2</a>
+                        <a class="dropdown-item" href="Baitap1/jsexample.html/jquery3.html" target="_bank">3</a>
+    
+                    </div>
                 </li>
                 
             </ul>
@@ -59,40 +76,28 @@
            <div class="col-sm-4">
                <h2>About Me</h2>
                <h5>Photo of me:</h5>
-               <div><img src="Bài tập 1/pro.jpg" class="fakeing"></div>
+               <div><img src="Baitap1/pro.jpg" class="fakeing"></div>
                <p style="margin-left: 30px; font-weight: bold; font-style: italic;">No Pain No Gain</p>
                <h3>Introduct</h3>
                <div><i class="fa fa-graduation-cap" style="font-size:20px; color:royalblue; margin-right: 10px;" aria-hidden="true"></i>Education: Da Lat University</div>
                <div><i class="fa fa-home" style="font-size:x-large; color:royalblue;margin-right: 12px" aria-hidden="true"></i>Live at: Da Lat</div> 
-               <div><i class="fa fa-map-marker" style="font-size:26px; color:royalblue;margin-right: 20px" aria-hidden="true"></i>From: Ninh Binh</div>
+               <div><i class="fa fa-map-marker" style="font-size:28px; color:royalblue;margin-right: 20px" aria-hidden="true"></i>From: Ninh Binh</div>
 
            </div>
            <div class="col-sm-8">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div><img src="Bài tập 1/profile.jpg" style="width:70%;height:70%"></div>
+                <h2>Story</h2>
+                <div><img src="Baitap1/profile.jpg" style="width:70%;height:70%"></div>
                 <p>Some times..</p>
                 <p>You fail to do something and you start doubting yourself for that. You think you are not good enough. But keep in mind that: The broken clock shows the right time twice a day. It's a bad day maybe today you got bad luck but there are many beautiful things adead. Today is not easy tomorrow is difficult but the day after that will the okay</p>
-                <br>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div><img src="Bài tập 1/2017.jpg" class="fakeing"></div>
-                <dl>
-                    <dt>Sometimes I fall</dt>
-                    <dd>Watching the day go by lazily</dd>
-                    <dt>Sometimes I dream</dt>
-                    <dd>Will pick stars in the sky</dd>
-                    <dt>Did you know that</dt>
-                    <dd>Happiness is always with you</dd>
-                    <dt>It's the little everyday things</dt>
-                    <dd>Life is just so beautiful</dd>
-                </dl>
+                
            </div>
        </div> 
     </div>
 
-    <div class="jumbotron text-center" style="margin-bottom: 0">
-        <p>Footer</p>
+    <div class="jumbotron text-center" style="margin-bottom: 0; background-image: url('/Baitap1/anh5.jpg'); border-radius: 0%;">
+        <h1>CONTECT</h1>
+        <a style="color:peru; text-decoration: none; font-weight: bold;" >Email: 1812816@dlu.edu.vn</a>
+
     </div>
 </body>
 </html>
